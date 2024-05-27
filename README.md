@@ -25,7 +25,6 @@
 - **app/models.py:** Contains the database models.
 - **app/routers.py:** Defines the API routes.
 - **app/services.py:** Contains the business logic and service functions.
-- **nginx/nginx.conf:** Configuration file for Nginx.
 - **requirements.txt:** List of dependencies to be installed.
 
 ## Stopping the Containers
