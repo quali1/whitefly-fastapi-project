@@ -46,3 +46,8 @@ async def async_form_post(name: str = Form(...), email: str = Form(...), gender:
     dob = datetime.strptime(dob, '%Y-%m-%d')
     add_user.delay(name, email, gender, dob)
     return {"message": "User creation task submitted successfully"}
+
+
+@router.get("/loaderio-f19f716b7019325c607801997afb0dcb")
+async def loader_get_token(request: Request):
+    return 'loaderio-f19f716b7019325c607801997afb0dcb'
