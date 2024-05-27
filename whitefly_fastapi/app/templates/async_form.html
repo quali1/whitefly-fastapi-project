@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Async Form{% endblock title %}
+
+{% block content %}
+    <h2>Submit your data (async)</h2>
+    <form action="/async_form" method="POST" class="form-container">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="prefer_not_to_say">Prefer not to say</option>
+        </select><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

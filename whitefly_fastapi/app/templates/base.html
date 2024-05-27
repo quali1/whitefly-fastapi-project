@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/styles.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Whitefly FastAPI Project</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/regular_form">Regular Form</a></li>
+            <li><a href="/async_form">Async Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    {% block content %}
+
+    {% endblock %}
+</main>
+
+<footer>
+    <p>&copy; 2024 DataCollector</p>
+</footer>
+</body>
+</html>
