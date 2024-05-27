@@ -50,4 +50,5 @@ async def async_form_post(name: str = Form(...), email: str = Form(...), gender:
 
 @router.get("/loaderio-f19f716b7019325c607801997afb0dcb")
 async def loader_get_token(request: Request):
-    return 'loaderio-f19f716b7019325c607801997afb0dcb'
+    # return 'loaderio-f19f716b7019325c607801997afb0dcb'
+    return HTMLResponse('loaderio-f19f716b7019325c607801997afb0dcb', status_code=200)
