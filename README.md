@@ -17,6 +17,22 @@
 - **Home Page:**
   Access the home page at `http://localhost:8000` to interact with the API.
 
+- **Regular Form:**
+  Submit a form to add a user synchronously.
+
+- **Async Form:**
+  Submit a form to add a user asynchronously using Celery.
+
+## Adding a New User Synchronously
+
+1. Navigate to `http://localhost:8000/regular_form`
+2. Fill out the form and submit.
+
+## Adding a New User Asynchronously
+
+1. Navigate to `http://localhost:8000/async_form`
+2. Fill out the form and submit.
+
 ## Project Structure
 
 - **app/__init__.py:** Initializes the FastAPI app.
